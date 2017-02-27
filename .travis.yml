@@ -1,0 +1,13 @@
+language: objective-c
+osx_image: xcode8.2
+
+before_install:
+  - brew update
+  - brew outdated swiftlint || brew upgrade swiftlint
+
+script:
+  - set -o pipefail
+  - xcodebuild -version
+  - xcodebuild -showsdks
+  - swiftlint lint --strict
+  - xcodebuild -workspace MaterialDesignColorPicker.xcworkspace -scheme MaterialDesignColorPicker analyze | xcpretty

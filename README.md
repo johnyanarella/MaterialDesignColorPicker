@@ -6,6 +6,7 @@
 </p>
 
 <p align="center">
+	<a href="https://travis-ci.org/CodeCatalyst/MaterialDesignColorPicker"><img src="https://travis-ci.org/CodeCatalyst/MaterialDesignColorPicker.svg?branch=master" alt="Travis CI Build Status"></a>
 	<a href="https://github.com/CodeCatalyst/MaterialDesignColorPicker/releases"><img src="https://img.shields.io/badge/version-1.0-yellow.svg" alt="Version: 1.0"></a>
 	<a href="https://developer.apple.com/swift/"><img src="https://img.shields.io/badge/Swift-3.0.2-orange.svg" alt="Swift 3.0.2"></a>
 	<a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT License-blue.svg" alt="License: MIT"></a>
