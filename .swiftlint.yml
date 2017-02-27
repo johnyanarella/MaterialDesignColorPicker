@@ -1,0 +1,12 @@
+disabled_rules:
+  - file_length
+  - line_length
+  - todo
+  - type_name
+  - type_body_length
+excluded:
+  - Carthage
+  - Design
+variable_name:
+  min_length:
+    warning: 2

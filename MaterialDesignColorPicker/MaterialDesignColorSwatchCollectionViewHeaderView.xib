@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="MaterialDesignColorSwatchCollectionViewHeaderView" customModule="MaterialDesignColorPicker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="72"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdv-21-0Es">
+                    <rect key="frame" x="14" y="47" width="252" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="19" id="InD-bw-G3z"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Color Name" id="D1Q-7Z-5di">
+                        <font key="font" size="13" name="Roboto-Regular"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="cdv-21-0Es" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="16" id="A1W-Wc-F8w"/>
+                <constraint firstItem="cdv-21-0Es" firstAttribute="trailing" secondItem="c22-O7-iKe" secondAttribute="trailing" constant="-16" id="WLX-sJ-KIR"/>
+                <constraint firstItem="cdv-21-0Es" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="6" id="sBF-5N-HGn"/>
+            </constraints>
+            <connections>
+                <outlet property="nameLabel" destination="cdv-21-0Es" id="VVu-hF-x9g"/>
+            </connections>
+        </customView>
+    </objects>
+</document>

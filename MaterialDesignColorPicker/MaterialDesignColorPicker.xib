@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MaterialDesignColorPicker" customModule="MaterialDesignColorPicker" customModuleProvider="target">
+            <connections>
+                <outlet property="paletteView" destination="aaL-eB-Fam" id="Ess-3Q-02E"/>
+                <outlet property="scrollView" destination="hrT-Wy-4oR" id="3ek-qN-PsH"/>
+                <outlet property="swatchCollectionView" destination="fnV-Se-9eU" id="eP1-fz-KCD"/>
+                <outlet property="view" destination="c22-O7-iKe" id="90u-Y9-RXy"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="448"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="aaL-eB-Fam" customClass="MaterialDesignColorPaletteView" customModule="MaterialDesignColorPicker" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="392" width="280" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="aaL-eB-Fam" secondAttribute="height" multiplier="5:1" id="wPp-Qv-BzN"/>
+                    </constraints>
+                </customView>
+                <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrT-Wy-4oR" customClass="OverlayScrollView" customModule="MaterialDesignColorPicker" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="280" height="392"/>
+                    <clipView key="contentView" drawsBackground="NO" id="PTo-JR-ntq">
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="392"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView selectable="YES" allowsEmptySelection="NO" id="fnV-Se-9eU">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="392"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" id="gH7-L6-XSh"/>
+                                <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="R2a-Ai-H1Y" customClass="OverlayScroller" customModule="MaterialDesignColorPicker" customModuleProvider="target">
+                        <rect key="frame" x="1" y="144" width="233" height="15"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="cdL-Fl-HWJ" customClass="OverlayScroller" customModule="MaterialDesignColorPicker" customModuleProvider="target">
+                        <rect key="frame" x="234" y="1" width="15" height="143"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="hrT-Wy-4oR" firstAttribute="top" secondItem="aaL-eB-Fam" secondAttribute="bottom" id="NO2-1A-mhn"/>
+                <constraint firstItem="hrT-Wy-4oR" firstAttribute="trailing" secondItem="c22-O7-iKe" secondAttribute="trailing" id="eE9-Xx-2ZO"/>
+                <constraint firstItem="hrT-Wy-4oR" firstAttribute="bottom" secondItem="c22-O7-iKe" secondAttribute="bottom" id="jqK-YN-MhY"/>
+                <constraint firstItem="aaL-eB-Fam" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="mCA-oi-va2"/>
+                <constraint firstItem="hrT-Wy-4oR" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="pjb-8E-wLk"/>
+                <constraint firstItem="aaL-eB-Fam" firstAttribute="trailing" secondItem="c22-O7-iKe" secondAttribute="trailing" id="u8X-JH-7kn"/>
+                <constraint firstItem="aaL-eB-Fam" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="xt9-qo-rnm"/>
+            </constraints>
+        </customView>
+    </objects>
+</document>
