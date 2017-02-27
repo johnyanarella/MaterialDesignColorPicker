@@ -71,6 +71,7 @@
 		FC9A3E691E47CFA300165FFB /* MaterialDesignColorSwatchCollectionViewHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MaterialDesignColorSwatchCollectionViewHeaderView.xib; sourceTree = "<group>"; };
 		FC9A3E6B1E47D0F000165FFB /* MaterialDesignColorSwatchCollectionViewHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialDesignColorSwatchCollectionViewHeaderView.swift; sourceTree = "<group>"; };
 		FC9A3E6F1E47D9A300165FFB /* RippleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RippleView.swift; sourceTree = "<group>"; };
+		FCB2E34C1E63B6B20043E886 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		FCE0E6771E480A8D0015974C /* OverlayScroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayScroller.swift; sourceTree = "<group>"; };
 		FCE617FF1E5398B700D49B4D /* MaterialDesignColorPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MaterialDesignColorPicker.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +99,7 @@
 			children = (
 				FC5CE1921E229E7700C2743F /* .gitignore */,
 				FC5CE1901E229E3B00C2743F /* .swiftlint.yml */,
+				FCB2E34C1E63B6B20043E886 /* .travis.yml */,
 				FC2EE8291E631F9A00838B99 /* LICENSE */,
 				FC6F68D41E31C3710021749C /* Playground.playground */,
 				FC2EE8281E631F9100838B99 /* README.md */,
