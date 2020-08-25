@@ -3,18 +3,19 @@
 //  MaterialDesignColorPicker
 //
 //  Created by John Yanarella on 1/21/17.
-//  Copyright © 2017 CodeCatalyst. All rights reserved.
+//  Copyright © 2017-2020 John Yanarella.
 //
 
 import Cocoa
 
-public extension NSView {
-    public func ripple(color: NSColor, from: CGPoint, transition: (() -> Void)? = nil, completion: (() -> Void)? = nil) {
+extension NSView {
+    func ripple(color: NSColor, from: CGPoint, transition: (() -> Void)? = nil, completion: (() -> Void)? = nil) {
         guard let layer = layer else {
             return
         }
 
         let rippleLayer = RippleLayer()
+        rippleLayer.zPosition = .greatestFiniteMagnitude
         layer.addSublayer(rippleLayer)
 
         rippleLayer.ripple(color: color.cgColor, from: from, bounds: bounds, transition: transition, completion: completion)
@@ -25,7 +26,7 @@ private func CGPointDistance(from: CGPoint, to: CGPoint) -> CGFloat {
     return hypot(from.x - to.x, from.y - to.y)
 }
 
-private final class RippleLayer: CAShapeLayer {
+private class RippleLayer: CAShapeLayer {
     private func calculateRippleRadius(from: CGPoint, bounds: CGRect) -> CGFloat {
         return max(
             CGPointDistance(from: from, to: CGPoint(x: bounds.minX, y: bounds.minY)),
@@ -66,7 +67,7 @@ private final class RippleLayer: CAShapeLayer {
         scaleUpAnimation.toValue = 1.0
         scaleUpAnimation.duration = scaleUpAnimationDuration
         scaleUpAnimation.timingFunction = MaterialDesignEasingCurves.fastOutSlowIn
-        scaleUpAnimation.fillMode = kCAFillModeForwards
+        scaleUpAnimation.fillMode = CAMediaTimingFillMode.forwards
         scaleUpAnimation.isRemovedOnCompletion = false
         add(scaleUpAnimation, forKey: nil)
 
@@ -78,7 +79,7 @@ private final class RippleLayer: CAShapeLayer {
         fadeOutAnimation.duration = fadeOutAnimationDuration
         fadeOutAnimation.beginTime = CACurrentMediaTime() + scaleUpAnimationDuration
         fadeOutAnimation.timingFunction = MaterialDesignEasingCurves.fastOutLinearIn
-        fadeOutAnimation.fillMode = kCAFillModeForwards
+        fadeOutAnimation.fillMode = CAMediaTimingFillMode.forwards
         fadeOutAnimation.isRemovedOnCompletion = false
         add(fadeOutAnimation, forKey: nil)
 

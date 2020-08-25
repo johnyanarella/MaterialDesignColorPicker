@@ -6,11 +6,10 @@
 </p>
 
 <p align="center">
-	<a href="https://travis-ci.org/CodeCatalyst/MaterialDesignColorPicker"><img src="https://travis-ci.org/CodeCatalyst/MaterialDesignColorPicker.svg?branch=master" alt="Travis CI Build Status"></a>
-	<a href="https://github.com/CodeCatalyst/MaterialDesignColorPicker/releases"><img src="https://img.shields.io/badge/version-1.0-yellow.svg" alt="Version: 1.0"></a>
-	<a href="https://developer.apple.com/swift/"><img src="https://img.shields.io/badge/Swift-3.0.2-orange.svg" alt="Swift 3.0.2"></a>
+	<a href="https://github.com/johnyanarella/MaterialDesignColorPicker/releases"><img src="https://img.shields.io/badge/version-1.0-yellow.svg" alt="Version: 1.0"></a>
+	<a href="https://developer.apple.com/swift/"><img src="https://img.shields.io/badge/Swift-5-orange.svg" alt="Swift 5"></a>
 	<a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT License-blue.svg" alt="License: MIT"></a>
-	<a href="http://www.apple.com/macos"><img src="https://img.shields.io/badge/platform-macOS 10.11+-lightgrey.svg" alt="Platform: macOS 10.11+"></a>
+	<a href="http://www.apple.com/macos"><img src="https://img.shields.io/badge/platform-macOS 10.13+-lightgrey.svg" alt="Platform: macOS 10.13+"></a>
 </p>
 
 <p align="center">
@@ -36,7 +35,7 @@ Once installed, the color picker is available systemwide within any macOS applic
 	* TextEdit
 * and many other third-party macOS applications.
 
-**Requires macOS 10.11 (or higher).** Additionally, because it requires newer NSCollectionView APIs, it will only load within applications that were linked against the 10.11 (or higher) SDK.
+**Requires macOS 10.13 (or higher).**
 
 ## Installation
 
@@ -60,7 +59,7 @@ Build the `MaterialDesignColorPicker` target and copy the resulting `MaterialDes
 
 The project workspace also includes an Xcode Playground which can be used in combination with the `MaterialDesignColorPickerFramework` target for rapid iterative experimentation during development.
 
-**Requires Xcode 8.2 (or higher) and macOS X 10.11 (or higher).**
+**Requires Xcode 11 (or higher) and macOS X 10.13 (or higher).**
 
 ## Contributors
 
@@ -75,7 +74,7 @@ The project workspace also includes an Xcode Playground which can be used in com
 
 ## License
 
-Copyright &copy; 2017 [CodeCatalyst, LLC](http://www.codecatalyst.com/)
+Copyright &copy; 2017-2020 John Yanarella
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

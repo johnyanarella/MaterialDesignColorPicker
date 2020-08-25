@@ -14,8 +14,6 @@
 		FC3CA52F1E3B0E7200B72C7D /* MaterialDesignColorSwatchCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3CA52C1E3B0E7200B72C7D /* MaterialDesignColorSwatchCollectionViewItem.swift */; };
 		FC3CA5301E3B0E7200B72C7D /* MaterialDesignColorSwatchCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC3CA52D1E3B0E7200B72C7D /* MaterialDesignColorSwatchCollectionViewItem.xib */; };
 		FC3CA5311E3B0E7200B72C7D /* MaterialDesignColorSwatchCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC3CA52D1E3B0E7200B72C7D /* MaterialDesignColorSwatchCollectionViewItem.xib */; };
-		FC4AB5151E580673003C8312 /* OverlayScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4AB5141E580673003C8312 /* OverlayScrollView.swift */; };
-		FC4AB5161E580673003C8312 /* OverlayScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4AB5141E580673003C8312 /* OverlayScrollView.swift */; };
 		FC5CE1891E1F4AE200C2743F /* MaterialDesignColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5CE1881E1F4AE200C2743F /* MaterialDesignColorPicker.swift */; };
 		FC5CE1971E229F8700C2743F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC5CE1961E229F8700C2743F /* Assets.xcassets */; };
 		FC5CE19B1E22BC7800C2743F /* MaterialDesignColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5CE19A1E22BC7800C2743F /* MaterialDesignColorPalette.swift */; };
@@ -38,8 +36,6 @@
 		FC9A3E6E1E47D65700165FFB /* MaterialDesignColorSwatchCollectionViewHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC9A3E691E47CFA300165FFB /* MaterialDesignColorSwatchCollectionViewHeaderView.xib */; };
 		FC9A3E701E47D9A300165FFB /* RippleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9A3E6F1E47D9A300165FFB /* RippleView.swift */; };
 		FC9A3E711E47D9A300165FFB /* RippleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9A3E6F1E47D9A300165FFB /* RippleView.swift */; };
-		FCE0E6781E480A8D0015974C /* OverlayScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE0E6771E480A8D0015974C /* OverlayScroller.swift */; };
-		FCE0E6791E480A8D0015974C /* OverlayScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE0E6771E480A8D0015974C /* OverlayScroller.swift */; };
 		FCE0E67F1E4B86B90015974C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC5CE1961E229F8700C2743F /* Assets.xcassets */; };
 		FCE618001E5398B700D49B4D /* MaterialDesignColorPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCE617FF1E5398B700D49B4D /* MaterialDesignColorPicker.xib */; };
 		FCE618011E5398B700D49B4D /* MaterialDesignColorPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCE617FF1E5398B700D49B4D /* MaterialDesignColorPicker.xib */; };
@@ -51,7 +47,6 @@
 		FC2EE8291E631F9A00838B99 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		FC3CA52C1E3B0E7200B72C7D /* MaterialDesignColorSwatchCollectionViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialDesignColorSwatchCollectionViewItem.swift; sourceTree = "<group>"; };
 		FC3CA52D1E3B0E7200B72C7D /* MaterialDesignColorSwatchCollectionViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MaterialDesignColorSwatchCollectionViewItem.xib; sourceTree = "<group>"; };
-		FC4AB5141E580673003C8312 /* OverlayScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayScrollView.swift; sourceTree = "<group>"; };
 		FC5CE17F1E1F4A8F00C2743F /* MaterialDesignColorPicker.colorPicker */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaterialDesignColorPicker.colorPicker; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC5CE1821E1F4A8F00C2743F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC5CE1881E1F4AE200C2743F /* MaterialDesignColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialDesignColorPicker.swift; sourceTree = "<group>"; };
@@ -60,7 +55,7 @@
 		FC5CE1961E229F8700C2743F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC5CE19A1E22BC7800C2743F /* MaterialDesignColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialDesignColorPalette.swift; sourceTree = "<group>"; };
 		FC5CE19C1E22BCBF00C2743F /* NSColor+hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSColor+hex.swift"; sourceTree = "<group>"; };
-		FC6F68D41E31C3710021749C /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = SOURCE_ROOT; };
+		FC6F68D41E31C3710021749C /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FC6F68ED1E31C6570021749C /* MaterialDesignColorPickerFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaterialDesignColorPickerFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC6F68EF1E31C6570021749C /* MaterialDesignColorPickerFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaterialDesignColorPickerFramework.h; sourceTree = "<group>"; };
 		FC6F68F01E31C6570021749C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,8 +66,6 @@
 		FC9A3E691E47CFA300165FFB /* MaterialDesignColorSwatchCollectionViewHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MaterialDesignColorSwatchCollectionViewHeaderView.xib; sourceTree = "<group>"; };
 		FC9A3E6B1E47D0F000165FFB /* MaterialDesignColorSwatchCollectionViewHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialDesignColorSwatchCollectionViewHeaderView.swift; sourceTree = "<group>"; };
 		FC9A3E6F1E47D9A300165FFB /* RippleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RippleView.swift; sourceTree = "<group>"; };
-		FCB2E34C1E63B6B20043E886 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
-		FCE0E6771E480A8D0015974C /* OverlayScroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayScroller.swift; sourceTree = "<group>"; };
 		FCE617FF1E5398B700D49B4D /* MaterialDesignColorPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MaterialDesignColorPicker.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,7 +92,6 @@
 			children = (
 				FC5CE1921E229E7700C2743F /* .gitignore */,
 				FC5CE1901E229E3B00C2743F /* .swiftlint.yml */,
-				FCB2E34C1E63B6B20043E886 /* .travis.yml */,
 				FC2EE8291E631F9A00838B99 /* LICENSE */,
 				FC6F68D41E31C3710021749C /* Playground.playground */,
 				FC2EE8281E631F9100838B99 /* README.md */,
@@ -136,8 +128,6 @@
 				FC7FC3C41E31BE4C006C2AEC /* NSBezierPath+cgPath.swift */,
 				FC5CE19C1E22BCBF00C2743F /* NSColor+hex.swift */,
 				FC7FC3C61E31BE90006C2AEC /* NSView+ripple.swift */,
-				FCE0E6771E480A8D0015974C /* OverlayScroller.swift */,
-				FC4AB5141E580673003C8312 /* OverlayScrollView.swift */,
 				FC9A3E6F1E47D9A300165FFB /* RippleView.swift */,
 			);
 			path = MaterialDesignColorPicker;
@@ -211,7 +201,7 @@
 		FC5CE1771E1F4A8F00C2743F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = CodeCatalyst;
 				TargetAttributes = {
 					FC5CE17E1E1F4A8F00C2743F = {
@@ -229,10 +219,11 @@
 			};
 			buildConfigurationList = FC5CE17A1E1F4A8F00C2743F /* Build configuration list for PBXProject "MaterialDesignColorPicker" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = FC5CE1761E1F4A8F00C2743F;
 			productRefGroup = FC5CE1801E1F4A8F00C2743F /* Products */;
@@ -285,7 +276,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "TAGS=\"TODO:|FIXME:\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
+			shellScript = "TAGS=\"TODO:|FIXME:\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"\n";
 		};
 		FC5CE18F1E229DF600C2743F /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -298,7 +289,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint does not exist, download it from: https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint does not exist, download it from: https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		FCE0E67D1E4AA0300015974C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -337,9 +328,7 @@
 				FC9A3E6C1E47D0F000165FFB /* MaterialDesignColorSwatchCollectionViewHeaderView.swift in Sources */,
 				FC5CE19D1E22BCBF00C2743F /* NSColor+hex.swift in Sources */,
 				FC7FC3C91E31BEF9006C2AEC /* MaterialDesignEasingCurves.swift in Sources */,
-				FCE0E6781E480A8D0015974C /* OverlayScroller.swift in Sources */,
 				FC6F68F71E31C6640021749C /* NSBezierPath+cgPath.swift in Sources */,
-				FC4AB5151E580673003C8312 /* OverlayScrollView.swift in Sources */,
 				FC9A3E701E47D9A300165FFB /* RippleView.swift in Sources */,
 				FC5CE19B1E22BC7800C2743F /* MaterialDesignColorPalette.swift in Sources */,
 				FC7FC3C71E31BE90006C2AEC /* NSView+ripple.swift in Sources */,
@@ -358,12 +347,10 @@
 				FC6F68F61E31C6610021749C /* NSColor+hex.swift in Sources */,
 				FC8A70751E346FF70074F427 /* MaterialDesignColorPaletteView.swift in Sources */,
 				FC6F68F81E31C6640021749C /* NSBezierPath+cgPath.swift in Sources */,
-				FC4AB5161E580673003C8312 /* OverlayScrollView.swift in Sources */,
 				FC6F68FC1E31C6740021749C /* MaterialDesignColorPalette.swift in Sources */,
 				FC3CA52F1E3B0E7200B72C7D /* MaterialDesignColorSwatchCollectionViewItem.swift in Sources */,
 				FC6F68F91E31C6670021749C /* MaterialDesignEasingCurves.swift in Sources */,
 				FC6F68F51E31C65E0021749C /* NSView+ripple.swift in Sources */,
-				FCE0E6791E480A8D0015974C /* OverlayScroller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,20 +361,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -410,7 +406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "Material Design";
@@ -422,20 +418,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -452,7 +457,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "Material Design";
 				SDKROOT = macosx;
@@ -462,20 +467,20 @@
 		FC5CE1861E1F4A8F00C2743F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MaterialDesignColorPicker/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.codecatalyst.MaterialDesignColorPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = colorPicker;
 			};
 			name = Debug;
@@ -483,20 +488,20 @@
 		FC5CE1871E1F4A8F00C2743F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MaterialDesignColorPicker/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.codecatalyst.MaterialDesignColorPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = colorPicker;
 			};
 			name = Release;
@@ -505,7 +510,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -517,13 +522,13 @@
 				INFOPLIST_FILE = MaterialDesignColorPickerFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.codecatalyst.MaterialDesignColorPickerFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -533,7 +538,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -545,12 +550,12 @@
 				INFOPLIST_FILE = MaterialDesignColorPickerFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.codecatalyst.MaterialDesignColorPickerFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};

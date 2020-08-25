@@ -3,7 +3,7 @@
 //  MaterialDesignColorPicker
 //
 //  Created by John Yanarella on 1/28/17.
-//  Copyright © 2017 CodeCatalyst. All rights reserved.
+//  Copyright © 2017-2020 John Yanarella.
 //
 
 import Cocoa
@@ -11,12 +11,7 @@ import Cocoa
 class MaterialDesignColorSwatchCollectionViewItem: NSCollectionViewItem {
     @IBOutlet fileprivate weak var label: NSTextField!
     @IBOutlet fileprivate weak var hexLabel: NSTextField!
-
-    @IBOutlet fileprivate weak var selectionIndicator: NSView! {
-        didSet {
-            selectionIndicator.wantsLayer = true
-        }
-    }
+    @IBOutlet fileprivate weak var selectionIndicator: NSView!
 
     var color: MaterialDesignColor? {
         didSet {
@@ -36,8 +31,10 @@ class MaterialDesignColorSwatchCollectionViewItem: NSCollectionViewItem {
             hexLabel.stringValue = String(format: "#%06x", color.hex).uppercased()
             hexLabel.textColor = color.labelColor
 
+            selectionIndicator.wantsLayer = true
             selectionIndicator.layer?.backgroundColor = color.labelColor?.cgColor
 
+            view.wantsLayer = true
             view.layer?.backgroundColor = color.color.cgColor
             view.rippleColor = color.rippleColor
         }

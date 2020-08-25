@@ -3,7 +3,7 @@
 //  MaterialDesignColorPicker
 //
 //  Created by John Yanarella on 1/21/17.
-//  Copyright © 2017 CodeCatalyst. All rights reserved.
+//  Copyright © 2017-2020 John Yanarella.
 //
 
 import Cocoa

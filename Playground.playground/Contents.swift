@@ -1,13 +1,12 @@
-/*: 
- 
-# Material Design Color Picker Playground
+/*:
+## Material Design Color Picker Playground
 
-Use this playground in combination with the `MaterialDesignColorPickerFramework` target for rapid interative experimentation during development.
+Use this playground in combination with the `MaterialDesignColorPickerFramework` target for rapid iterative experimentation during development.
  
 This approach reduces the tedium of reinstalling the color picker bundle and closing + reopening the host application after each build.
 
-Choose "View" | "Assistant Editor" | "Show Assistant Editor" in Xcode.
- */
+Choose "Editor" > "Live View" to see a live preview.
+*/
 import Cocoa
 import PlaygroundSupport
 
@@ -18,5 +17,9 @@ bundle.load()
 
 let colorPicker = MaterialDesignColorPicker()
 let view = colorPicker.provideNewView(true)
+
+colorPicker.viewSizeChanged(nil)
+
+colorPicker.setColor(NSColor(hex: 0x000000)!)
 
 PlaygroundPage.current.liveView = view

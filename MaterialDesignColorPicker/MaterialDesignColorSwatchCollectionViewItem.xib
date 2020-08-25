@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097.2"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,8 +19,8 @@
                         <constraint firstAttribute="width" constant="4" id="rTb-5g-Ubr"/>
                     </constraints>
                 </customView>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbG-Td-7j4">
-                    <rect key="frame" x="14" y="7" width="48" height="19"/>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jbG-Td-7j4">
+                    <rect key="frame" x="14" y="4" width="48" height="19"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="19" id="RfL-uH-dgv"/>
                         <constraint firstAttribute="width" constant="44" id="nNV-iQ-wzn"/>
@@ -31,8 +31,8 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IF-8Z-Ilh">
-                    <rect key="frame" x="198" y="7" width="68" height="19"/>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6IF-8Z-Ilh">
+                    <rect key="frame" x="198" y="4" width="68" height="19"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="64" id="BFA-dD-ltt"/>
                         <constraint firstAttribute="height" constant="19" id="NYl-zy-mgr"/>
@@ -49,10 +49,11 @@
                 <constraint firstItem="L45-q5-lvE" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="5Mf-LT-buc"/>
                 <constraint firstItem="L45-q5-lvE" firstAttribute="bottom" secondItem="Hz6-mo-xeY" secondAttribute="bottom" id="6PL-rA-TL5"/>
                 <constraint firstItem="jbG-Td-7j4" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="16" id="dLR-5R-MTx"/>
-                <constraint firstItem="6IF-8Z-Ilh" firstAttribute="bottom" secondItem="Hz6-mo-xeY" secondAttribute="bottom" constant="-7" id="jXy-aY-To5"/>
-                <constraint firstItem="jbG-Td-7j4" firstAttribute="bottom" secondItem="Hz6-mo-xeY" secondAttribute="bottom" constant="-7" id="oyt-N3-D2q"/>
+                <constraint firstItem="6IF-8Z-Ilh" firstAttribute="bottom" secondItem="Hz6-mo-xeY" secondAttribute="bottom" constant="-4" id="jXy-aY-To5"/>
+                <constraint firstItem="jbG-Td-7j4" firstAttribute="bottom" secondItem="Hz6-mo-xeY" secondAttribute="bottom" constant="-4" id="oyt-N3-D2q"/>
                 <constraint firstItem="6IF-8Z-Ilh" firstAttribute="trailing" secondItem="Hz6-mo-xeY" secondAttribute="trailing" constant="-16" id="y8r-P4-jWl"/>
             </constraints>
+            <point key="canvasLocation" x="139" y="154"/>
         </customView>
         <collectionViewItem id="c9j-Fc-xqu" customClass="MaterialDesignColorSwatchCollectionViewItem" customModule="MaterialDesignColorPicker" customModuleProvider="target">
             <connections>

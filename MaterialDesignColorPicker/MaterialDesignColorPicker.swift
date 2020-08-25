@@ -3,7 +3,7 @@
 //  MaterialDesignColorPicker
 //
 //  Created by John Yanarella on 1/7/17.
-//  Copyright © 2017 CodeCatalyst. All rights reserved.
+//  Copyright © 2017-2020 John Yanarella.
 //
 
 import Cocoa
@@ -15,8 +15,8 @@ func log(_ message: String) {
 public final class MaterialDesignColorPicker: NSColorPicker {
     private static let backgroundColor = NSColor.windowBackgroundColor
 
-    fileprivate static let swatchCollectionViewHeaderIdentifier = "MaterialDesignColorSwatchCollectionViewHeaderView"
-    fileprivate static let swatchCollectionViewItemIdentifier = "MaterialDesignColorSwatchCollectionViewItem"
+    fileprivate static let swatchCollectionViewHeaderIdentifier = NSUserInterfaceItemIdentifier(rawValue: "MaterialDesignColorSwatchCollectionViewHeaderView")
+    fileprivate static let swatchCollectionViewItemIdentifier = NSUserInterfaceItemIdentifier(rawValue: "MaterialDesignColorSwatchCollectionViewItem")
 
     @IBOutlet fileprivate var view: NSView! {
         didSet {
@@ -32,7 +32,7 @@ public final class MaterialDesignColorPicker: NSColorPicker {
         }
     }
 
-    @IBOutlet fileprivate weak var scrollView: OverlayScrollView! {
+    @IBOutlet fileprivate weak var scrollView: NSScrollView! {
         didSet {
             scrollView.wantsLayer = true
             scrollView.layer?.backgroundColor = MaterialDesignColorPicker.backgroundColor.cgColor
@@ -50,12 +50,10 @@ public final class MaterialDesignColorPicker: NSColorPicker {
             swatchCollectionView.dataSource = self
 
             let headerNib = NSNib(nibNamed: "MaterialDesignColorSwatchCollectionViewHeaderView", bundle: bundle)
-            swatchCollectionView.register(headerNib, forSupplementaryViewOfKind: NSCollectionElementKindSectionHeader, withIdentifier: MaterialDesignColorPicker.swatchCollectionViewHeaderIdentifier)
+            swatchCollectionView.register(headerNib, forSupplementaryViewOfKind: NSCollectionView.elementKindSectionHeader, withIdentifier: MaterialDesignColorPicker.swatchCollectionViewHeaderIdentifier)
 
             let itemNib = NSNib(nibNamed: "MaterialDesignColorSwatchCollectionViewItem", bundle: bundle)
             swatchCollectionView.register(itemNib, forItemWithIdentifier: MaterialDesignColorPicker.swatchCollectionViewItemIdentifier)
-
-            swatchCollectionView.reloadData()
         }
     }
 
@@ -69,19 +67,16 @@ public final class MaterialDesignColorPicker: NSColorPicker {
 
     fileprivate var initialColorSet: Bool = false
 
+    fileprivate var initialSizeSet: Bool = false
+
     public override init() {
         super.init()
     }
 
     public required init?(pickerMask mask: Int, colorPanel owningColorPanel: NSColorPanel) {
-        // NOTE: Only instantiate if the hosting application was linked against 10.11+.
-        // Otherwise, Cocoa enables a special backwards compatability mode that excludes breaks required NSCollectionView behavior.
         let version = bundle.object(forInfoDictionaryKey: "CFBundleShortVersionString")!
         let hostAppKitVersion = NSVersionOfLinkTimeLibrary("AppKit") >> 16
         log("Version: \(version) - Host App Linked SDK: \(hostAppKitVersion)")
-        if hostAppKitVersion < NSAppKitVersionNumber10_11 {
-            return nil
-        }
 
         super.init(pickerMask: mask, colorPanel: owningColorPanel)
     }
@@ -98,7 +93,16 @@ public final class MaterialDesignColorPicker: NSColorPicker {
     public override func viewSizeChanged(_ sender: Any?) {
         super.viewSizeChanged(sender)
 
-        swatchCollectionView.collectionViewLayout?.invalidateLayout()
+        if swatchCollectionView != nil {
+            if !initialSizeSet {
+                DispatchQueue.main.async {
+                    self.swatchCollectionView.reloadData()
+                }
+                initialSizeSet = true
+            } else {
+                swatchCollectionView.collectionViewLayout?.invalidateLayout()
+            }
+        }
     }
 
     public override var minContentSize: NSSize {
@@ -123,8 +127,8 @@ public final class MaterialDesignColorPicker: NSColorPicker {
 
     fileprivate func load(colorGroup: MaterialDesignColorGroup) {
         loadedColorGroup = colorGroup
-        self.swatchCollectionView.reloadData()
-        self.updateSelection()
+        swatchCollectionView.reloadData()
+        updateSelection()
     }
 
     fileprivate func select(colorGroup: MaterialDesignColorGroup, at locationInWindow: NSPoint, animated: Bool) {
@@ -146,18 +150,18 @@ public final class MaterialDesignColorPicker: NSColorPicker {
 
     fileprivate func select(color: MaterialDesignColor?) {
         selectedColor = color
-        self.updateSelection()
+        updateSelection()
     }
 
     fileprivate func apply(color: MaterialDesignColor) {
-        let transparentColor = color.color.withAlphaComponent(self.colorPanel.alpha)
+        let transparentColor = color.color.withAlphaComponent(colorPanel.alpha)
         log("Applying color: \(transparentColor.debugDescription)")
         colorPanel.color = transparentColor
     }
 
     fileprivate func updateSelection() {
         swatchCollectionView.deselectItems(at: swatchCollectionView.selectionIndexPaths)
-        if let selectedColor = selectedColor, let itemIndex = loadedColorGroup.colors.index(of: selectedColor) {
+        if let selectedColor = selectedColor, let itemIndex = loadedColorGroup.colors.firstIndex(of: selectedColor) {
             let indexPath = IndexPath(item: itemIndex, section: 0)
             swatchCollectionView.selectItems(at: [indexPath], scrollPosition: .nearestHorizontalEdge)
         }
@@ -166,11 +170,11 @@ public final class MaterialDesignColorPicker: NSColorPicker {
 
 // MARK: - NSColorPickingCustom
 extension MaterialDesignColorPicker: NSColorPickingCustom {
-    public func supportsMode(_ mode: NSColorPanelMode) -> Bool {
+    public func supportsMode(_ mode: NSColorPanel.Mode) -> Bool {
         return (mode == .RGB)
     }
 
-    public func currentMode() -> NSColorPanelMode {
+    public func currentMode() -> NSColorPanel.Mode {
         return .RGB
     }
 
@@ -232,8 +236,8 @@ extension MaterialDesignColorPicker: NSCollectionViewDelegateFlowLayout {
         return 0
     }
 
-    public func collectionView(_ collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, insetForSectionAt section: Int) -> EdgeInsets {
-        return EdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+    public func collectionView(_ collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, insetForSectionAt section: Int) -> NSEdgeInsets {
+        return NSEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
 
     public func collectionView(_ collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> NSSize {
@@ -242,7 +246,7 @@ extension MaterialDesignColorPicker: NSCollectionViewDelegateFlowLayout {
 }
 
 // MARK: - NSCollectionViewDataSource
-extension MaterialDesignColorPicker:  NSCollectionViewDataSource {
+extension MaterialDesignColorPicker: NSCollectionViewDataSource {
     public func numberOfSections(in collectionView: NSCollectionView) -> Int {
         return 1
     }
@@ -265,7 +269,7 @@ extension MaterialDesignColorPicker:  NSCollectionViewDataSource {
     }
 
     public func collectionView(_ collectionView: NSCollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> NSView {
-        let view = swatchCollectionView.makeSupplementaryView(ofKind: NSCollectionElementKindSectionHeader, withIdentifier: MaterialDesignColorPicker.swatchCollectionViewHeaderIdentifier, for: indexPath)
+        let view = swatchCollectionView.makeSupplementaryView(ofKind: NSCollectionView.elementKindSectionHeader, withIdentifier: MaterialDesignColorPicker.swatchCollectionViewHeaderIdentifier, for: indexPath)
 
         guard let collectionViewSection = view as? MaterialDesignColorSwatchCollectionViewHeaderView else {
             return view
