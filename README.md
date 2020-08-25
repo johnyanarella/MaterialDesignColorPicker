@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-	<a href="https://github.com/johnyanarella/MaterialDesignColorPicker/releases"><img src="https://img.shields.io/badge/version-1.0-yellow.svg" alt="Version: 1.0"></a>
+	<a href="https://github.com/johnyanarella/MaterialDesignColorPicker/releases"><img src="https://img.shields.io/badge/version-2.0-yellow.svg" alt="Version: 2.0"></a>
 	<a href="https://developer.apple.com/swift/"><img src="https://img.shields.io/badge/Swift-5-orange.svg" alt="Swift 5"></a>
 	<a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT License-blue.svg" alt="License: MIT"></a>
 	<a href="http://www.apple.com/macos"><img src="https://img.shields.io/badge/platform-macOS 10.13+-lightgrey.svg" alt="Platform: macOS 10.13+"></a>
